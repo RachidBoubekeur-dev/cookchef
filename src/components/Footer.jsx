@@ -1,8 +1,10 @@
+import styles from './Footer.module.scss';
+
 const Footer = () => {
     return (
-        <div className='b3'>
-            <h1>Footer</h1>
-        </div>
+        <footer className={`d-flex flex-row align-items-center justify-content-center p-20 ${styles.footer}`}>
+            <p>Copyright © {new Date().getFullYear()} Cookchef, Inc.</p>
+        </footer>
     );
 };
 
