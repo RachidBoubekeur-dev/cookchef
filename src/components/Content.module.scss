@@ -24,3 +24,25 @@
         grid-auto-columns: 1fr;
     }
 }
+
+.contentCard {
+  max-width: 1130px;
+  width: 100%;
+}
+
+.searchBar {
+  padding: 10px 15px 10px 15px;
+  border: 2px solid #ebebeb;
+  border-radius: 20px;
+  width: fit-content;
+  margin-left: auto;
+  justify-content: flex-end;
+  @include mixin.xs {
+       width: 100%;
+       justify-content: left;
+    }
+  input {
+    outline: 0;
+    border: 0;
+  }
+}
